@@ -4,7 +4,6 @@ export ZSH="$HOME/.oh-my-zsh"           # Path to your oh-my-zsh installation.
 export EDITOR='vim'
 
 ZSH_THEME="agnoster"
-COMPLETION_WAITING_DOTS="true"
 
 plugins=(
     git
