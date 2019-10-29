@@ -13,3 +13,7 @@ plugins=(
 source $ZSH/oh-my-zsh.sh
 
 prompt_context () { }                   # redefine prompt_context for hiding user@hostname
+
+if command -v tmux &> /dev/null && [ -z "$TMUX" ]; then
+            tmux attach -t default || tmux new -s default
+fi
