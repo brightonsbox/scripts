@@ -35,8 +35,8 @@ set laststatus=2
 " dialogue asking if you wish to save changed files.
 set confirm
 
-" Enable use of the mouse for all modes
-set mouse=v
+" Enable use of the mouse
+set mouse=a
 
 " Set the command window height to 2 lines, to avoid many cases of having to
 " "press <Enter> to continue"
