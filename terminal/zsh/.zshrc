@@ -1,6 +1,7 @@
-export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=$HOME/Library/Python/3.7/bin/:$HOME/bin:/usr/local/bin:$PATH
 
-export ZSH="$HOME/.oh-my-zsh"           # Path to your oh-my-zsh installation.
+export PERSONAL_SCRIPTS_DIR=/Users/jonathanbrighton/scripts/personal
+export ZSH="$HOME/.oh-my-zsh"
 export EDITOR='vim'
 
 ZSH_THEME="agnoster"
