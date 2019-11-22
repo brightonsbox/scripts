@@ -1,6 +1,6 @@
 export PATH=$HOME/Library/Python/3.7/bin/:$HOME/bin:/usr/local/bin:$PATH
 
-export PERSONAL_SCRIPTS_DIR=/Users/jonathanbrighton/scripts/personal
+export PERSONAL_SCRIPTS_DIR=
 export ZSH="$HOME/.oh-my-zsh"
 export EDITOR='vim'
 
