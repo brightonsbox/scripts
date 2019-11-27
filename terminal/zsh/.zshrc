@@ -18,3 +18,7 @@ prompt_context () { }                   # redefine prompt_context for hiding use
 if command -v tmux &> /dev/null && [ -z "$TMUX" ]; then
             tmux attach -t default || tmux new -s default
 fi
+
+HISTFILE=~/.zsh_history
+HISTSIZE=999999999
+SAVEHIST=$HISTSIZE
