@@ -19,6 +19,8 @@ if command -v tmux &> /dev/null && [ -z "$TMUX" ]; then
             tmux attach -t default || tmux new -s default
 fi
 
+alias takeover="tmux detach -a"
+
 HISTFILE=~/.zsh_history
 HISTSIZE=999999999
 SAVEHIST=$HISTSIZE
