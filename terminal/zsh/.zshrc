@@ -1,6 +1,5 @@
-export PATH=$HOME/bin:/usr/local/bin:$PATH
+. $HOME/.brightonsboxrc
 
-export PERSONAL_SCRIPTS_DIR=
 export ZSH="$HOME/.oh-my-zsh"
 export EDITOR='vim'
 ZSH_THEME="agnoster"
@@ -23,3 +22,4 @@ alias takeover="tmux detach -a"
 HISTFILE=~/.zsh_history
 HISTSIZE=999999999
 SAVEHIST=$HISTSIZE
+
