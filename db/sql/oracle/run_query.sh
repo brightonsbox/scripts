@@ -1,8 +1,8 @@
 #!/bin/sh
 
-USERNAME=api_proxy_user
-PASSWORD=api_proxy_user
-ORACLE_URL=localhost:1521/ORCLPDB1
+USERNAME=
+PASSWORD=
+ORACLE_URL=localhost:1521/<SID>
 
 RESPONSE=
 function evaluate() 
