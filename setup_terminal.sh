@@ -36,3 +36,4 @@ ln -sf $REPOSITORY_DIR/text_processing/vim/.vimrc $HOME/.vimrc
 # Creating symbolic links of commonly used scripts to the ~/bin 
 # directory
 ln -sf $REPOSITORY_DIR/git/git-amend $HOME/bin/git-amend
+ln -sf $REPOSITORY_DIR/git/git-amend-nv $HOME/bin/git-amend-nv
