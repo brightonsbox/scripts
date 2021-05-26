@@ -3,10 +3,12 @@
 export ZSH="$HOME/.oh-my-zsh"
 export EDITOR='vim'
 ZSH_THEME="agnoster"
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#808080"
 
 plugins=(
     git
     autojump
+    zsh-autosuggestions
 )
 
 source $ZSH/oh-my-zsh.sh
