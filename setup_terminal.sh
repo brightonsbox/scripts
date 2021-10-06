@@ -35,6 +35,7 @@ ln -sf $REPOSITORY_DIR/text_processing/vim/.vimrc $HOME/.vimrc
 ################################################################
 # Creating symbolic links of commonly used scripts to the ~/bin 
 # directory
+mkdir -p $HOME/bin
 ln -sf $REPOSITORY_DIR/git/git-amend $HOME/bin/git-amend
 ln -sf $REPOSITORY_DIR/git/git-amend-nv $HOME/bin/git-amend-nv
 ln -sf $REPOSITORY_DIR/docker/docker-stop-all $HOME/bin/docker-stop-all
