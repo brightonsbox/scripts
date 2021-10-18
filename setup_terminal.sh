@@ -11,6 +11,8 @@
 #  * .zshrc
 #  * .tmux.conf
 #  * .vimrc
+#  * .gitconfig
+#  * .gitignore_global
 #
 # For custom, host-specific environment variables, a 
 # .brightonsboxrc is created and then sourced in .zshrc
@@ -29,6 +31,8 @@ fi
 ln -sf $REPOSITORY_DIR/terminal/tmux/.tmux.conf $HOME/.tmux.conf
 ln -sf $REPOSITORY_DIR/terminal/zsh/.zshrc $HOME/.zshrc
 ln -sf $REPOSITORY_DIR/text_processing/vim/.vimrc $HOME/.vimrc
+ln -sf $REPOSITORY_DIR/git/config/.gitconfig $HOME/.gitconfig
+ln -sf $REPOSITORY_DIR/git/config/.gitignore_global $HOME/.gitignore_global
 
 ################################################################
 # Commonly used scripts
@@ -36,7 +40,7 @@ ln -sf $REPOSITORY_DIR/text_processing/vim/.vimrc $HOME/.vimrc
 # Creating symbolic links of commonly used scripts to the ~/bin 
 # directory
 mkdir -p $HOME/bin
-ln -sf $REPOSITORY_DIR/git/git-amend $HOME/bin/git-amend
-ln -sf $REPOSITORY_DIR/git/git-amend-nv $HOME/bin/git-amend-nv
+ln -sf $REPOSITORY_DIR/git/bin/git-amend $HOME/bin/git-amend
+ln -sf $REPOSITORY_DIR/git/bin/git-amend-nv $HOME/bin/git-amend-nv
 ln -sf $REPOSITORY_DIR/docker/docker-stop-all $HOME/bin/docker-stop-all
 ln -sf $REPOSITORY_DIR/docker/docker-system-prune-volumes $HOME/bin/docker-system-prune-volumes
