@@ -1,3 +1,5 @@
+. $HOME/.brightonsboxrc
+
 export ZSH="$HOME/.oh-my-zsh"
 export EDITOR='vim'
 ZSH_THEME="agnoster"
@@ -44,4 +46,3 @@ alias jwth="decode_jwt 1"
 # Decode JWT Payload
 alias jwtp="decode_jwt 2"
 
-. $HOME/.brightonsboxrc
