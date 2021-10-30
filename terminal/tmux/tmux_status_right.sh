@@ -8,7 +8,7 @@ MIN_WIDTH=`expr 60 + $WINDOW_PENALTY`
 
 if [ "$WIDTH" -ge "$MID_WIDTH" ]; then
 echo "\
-#[fg=colour15] #($PERSONAL_SCRIPTS_DIR/terminal/tmux/tmux_battery_charge_indicator.sh) \
+#[fg=colour15] $($PERSONAL_SCRIPTS_DIR/terminal/tmux/tmux_battery_charge_indicator.sh) \
 #[fg=colour39, bg=colour237] \
 #[fg=colour237, bg=colour39] Jon Brighton \
 #[fg=colour15, bg=colour237] $(date +'%D')\
