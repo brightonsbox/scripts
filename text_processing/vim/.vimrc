@@ -47,6 +47,9 @@ set tabstop=4       " number of visual spaces per TAB
 set softtabstop=4   " number of spaces in tab when editing
 set expandtab       " tabs are spaces
 
+" JSON Specific Tabs:
+autocmd FileType json setlocal ts=2 sts=2 sw=2 expandtab
+
 " YAML Specific Tabs:
 autocmd FileType yaml,yml setlocal ts=2 sts=2 sw=2 expandtab
 
