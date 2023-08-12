@@ -9,4 +9,12 @@ do
    echo "$i"
 done
 
-# Individual access by "${arr[0]}", "${arr[1]}" etc. 
+## Individual access by "${arr[0]}", "${arr[1]}" etc. 
+
+## Iterate with index:
+array_count=${#arr[@]}
+for (( i=0; i<${array_count}; i++ ));
+do
+  echo "Element index $i: ${arr[$i]}"
+done
+

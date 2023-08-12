@@ -13,10 +13,13 @@ plugins=(
 
 source $ZSH/oh-my-zsh.sh
 
-prompt_context () { }                   # redefine prompt_context for hiding user@hostname
+# redefine prompt_context for hiding user@hostname and displaying k8s namespace
+prompt_context () {
+  prompt_segment 'white' 'black' "$(kubectl config view --minify | grep namespace: | awk '{ printf "%s", $2 }')"
+}
 
 if command -v tmux &> /dev/null && [ -z "$TMUX" ]; then
-            tmux attach -t default || tmux new -s default
+  tmux attach -t default || tmux new -s default
 fi
 
 alias takeover="tmux detach -a"
@@ -37,7 +40,7 @@ decode_base64_url() {
 }
 
 decode_jwt(){
-   decode_base64_url $(echo -n $2 | cut -d "." -f $1) | jq .
+  decode_base64_url $(echo -n $2 | cut -d "." -f $1) | jq .
 }
 
 # Decode JWT header

@@ -54,3 +54,6 @@ autocmd FileType json setlocal ts=2 sts=2 sw=2 expandtab
 autocmd FileType yaml,yml setlocal ts=2 sts=2 sw=2 expandtab
 
 set number          " display line numbers
+
+" Treat _ as a word boundary
+set iskeyword-=_

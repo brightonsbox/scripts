@@ -42,5 +42,22 @@ ln -sf $REPOSITORY_DIR/git/config/.gitignore_global $HOME/.gitignore_global
 mkdir -p $HOME/bin
 ln -sf $REPOSITORY_DIR/git/bin/git-amend $HOME/bin/git-amend
 ln -sf $REPOSITORY_DIR/git/bin/git-amend-nv $HOME/bin/git-amend-nv
+ln -sf $REPOSITORY_DIR/git/bin/pr $HOME/bin/pr
+ln -sf $REPOSITORY_DIR/git/bin/pra $HOME/bin/pra
+ln -sf $REPOSITORY_DIR/git/bin/prm $HOME/bin/prm
 ln -sf $REPOSITORY_DIR/docker/docker-stop-all $HOME/bin/docker-stop-all
 ln -sf $REPOSITORY_DIR/docker/docker-system-prune-volumes $HOME/bin/docker-system-prune-volumes
+
+################################################################
+# Install git-secrets pre-commit hook 
+################################################################
+echo "Installing git-secrets pre-commit hook"
+brew install git-secrets > /dev/null
+git secrets --install ~/.git-templates/git-secrets
+
+################################################################
+# Install github cli 
+################################################################
+echo "Installing github cli"
+brew install gh > /dev/null
+
