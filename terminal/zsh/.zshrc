@@ -46,3 +46,6 @@ alias jwth="decode_jwt 1"
 # Decode JWT Payload
 alias jwtp="decode_jwt 2"
 
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="$HOME/.sdkman"
+[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
